@@ -1,0 +1,16 @@
+<head>
+    <meta charset="UTF-8">
+    <title>メインページ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+
+<h1>ようこそ、{{ email }} さん！</h1>
+<a href="{{ url_for('logout') }}">ログアウト</a>
+
+<br>
+<form action="{{ url_for('delete_user') }}" method="POST">
+    <label for="email">登録を削除したい場合、削除するメールアドレスを入力してください：</label>
+    <input type="text" name="email" id="email" required>
+    <input type="submit" value="削除">
+</form>

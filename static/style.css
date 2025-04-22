@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'YuGothic','Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+      margin:0 auto;
+      overflow-x: hidden!important;
+    }
+
+.wrapper{
+    margin:100px 300px;
+    padding: 50px 50px;
+    width:400px;
+    background-color: rgb(248, 247, 246);
+    border:1px solid #555;
+}
+
+.wrapper h2{
+    text-align: center;
+    border-bottom:1px solid #555;
+}
+
+.wrapper form input{
+    margin-bottom:20px;
+
+}

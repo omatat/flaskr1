@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8">
+    <title>ログインサイト</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <main>
+    <div class="wrapper">   
+        <h2>Login</h2>
+<form method="post">
+    
+    Email<br> <input type="email" name="email"><br>
+    Password<br> <input type="password" name="password"><br>
+    <input type="submit" value="ログイン">
+
+    <p>
+    <a href="{{ url_for('register') }}">新規ユーザー登録はこちら</a>
+</p>
+
+</form>
+
+</div>
+</main>
+</body>
