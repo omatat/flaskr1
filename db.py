@@ -2,7 +2,7 @@ import sqlite3
 import os
 
 BASE_DIR = os.path.dirname(__file__)
-DATABASE = os.path.join(BASE_DIR, 'users.db')
+DATABASE = os.path.join('/tmp', 'users.db')
 
 def create_users_table():
     con = sqlite3.connect(DATABASE)
